@@ -13,6 +13,7 @@ namespace MiCalculadora
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
+            //pruebo
             this.Close();
         }
 
