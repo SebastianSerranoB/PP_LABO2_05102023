@@ -66,6 +66,16 @@ namespace MiCalculadora
             return new SistemaDecimal(value);
         }
 
+        private Numeracion GetOperador(string value)
+        {
+            if (Calculadora.Sistema == ESistema.Binario)
+            {
+                return new SistemaBinario(value);
+            }
+            return new SistemaDecimal(value);
+        }
+
+
         private void rdbDecimal_CheckedChanged(object sender, EventArgs e)
         {
             Calculadora.Sistema = ESistema.Decimal;
@@ -90,8 +100,8 @@ namespace MiCalculadora
         private void btnOperar_Click(object sender, EventArgs e)
         {
             char operador;
-            calculadora.PrimerOperando = calculadora.GetOperador(this.txtPrimerOperando.Text);
-            calculadora.SegundoOperando =calculadora.GetOperador(this.txtSegundoOperando.Text);
+            calculadora.PrimerOperando = this.GetOperador(this.txtPrimerOperando.Text);
+            calculadora.SegundoOperando =this.GetOperador(this.txtSegundoOperando.Text);
             operador = (char)this.cmbOperacion.SelectedItem;
             this.calculadora.Calcular(operador);
             this.calculadora.ActualizaHistorialDeOperaciones(operador);

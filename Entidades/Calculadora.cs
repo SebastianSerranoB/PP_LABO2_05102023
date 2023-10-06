@@ -37,7 +37,7 @@ namespace Entidades
             get
             { return this.nombreAlumno; }
 
-            set { this.nombreAlumno = value}
+            set { this.nombreAlumno = value; }
 
         }
 
@@ -124,6 +124,9 @@ namespace Entidades
             }
             else
             {
+
+
+                //fala validar igualdad
                 switch (operador)
                 {
                     case '-':
@@ -152,6 +155,23 @@ namespace Entidades
                 }
             }
         }
+
+
+
+        public string ActualizaHistorialDeOperaciones(char operador)
+        {
+            StringBuilder sB = new StringBuilder();
+
+            sB.AppendLine($"Sistema: {Calculadora.Sistema}");
+            sB.AppendLine($"Primer operando: {PrimerOperando.Valor}");
+            sB.AppendLine($"Segundo operando: {segundoOperando.Valor}");
+            sB.AppendLine($"Operador: {operador}");
+
+            return sB.ToString();
+        }
+
+
+
 
         private Numeracion MapeaResultado(double valor)
         {
