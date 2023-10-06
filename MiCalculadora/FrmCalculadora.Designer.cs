@@ -34,14 +34,14 @@
             this.lblPrimerOperando = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
             this.lblOperacion = new System.Windows.Forms.Label();
-            this.lblSegundoOperador = new System.Windows.Forms.Label();
-            this.txtSegundoOperador = new System.Windows.Forms.TextBox();
-            this.txtPrimerOperador = new System.Windows.Forms.TextBox();
+            this.lblSegundoOperando = new System.Windows.Forms.Label();
+            this.txtSegundoOperando = new System.Windows.Forms.TextBox();
+            this.txtPrimerOperando = new System.Windows.Forms.TextBox();
             this.cmbOperacion = new System.Windows.Forms.ComboBox();
             this.grpSistema = new System.Windows.Forms.GroupBox();
             this.rdbBinario = new System.Windows.Forms.RadioButton();
             this.rdbDecimal = new System.Windows.Forms.RadioButton();
-            this.lstbHistorial = new System.Windows.Forms.ListBox();
+            this.lstHistorial = new System.Windows.Forms.ListBox();
             this.lblHistorial = new System.Windows.Forms.Label();
             this.grpSistema.SuspendLayout();
             this.SuspendLayout();
@@ -106,35 +106,35 @@
             this.lblOperacion.TabIndex = 5;
             this.lblOperacion.Text = "Operacion:";
             // 
-            // lblSegundoOperador
+            // lblSegundoOperando
             // 
-            this.lblSegundoOperador.AutoSize = true;
-            this.lblSegundoOperador.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSegundoOperador.Location = new System.Drawing.Point(458, 220);
-            this.lblSegundoOperador.Name = "lblSegundoOperador";
-            this.lblSegundoOperador.Size = new System.Drawing.Size(188, 25);
-            this.lblSegundoOperador.TabIndex = 6;
-            this.lblSegundoOperador.Text = "Segundo operador:";
+            this.lblSegundoOperando.AutoSize = true;
+            this.lblSegundoOperando.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSegundoOperando.Location = new System.Drawing.Point(458, 220);
+            this.lblSegundoOperando.Name = "lblSegundoOperando";
+            this.lblSegundoOperando.Size = new System.Drawing.Size(188, 25);
+            this.lblSegundoOperando.TabIndex = 6;
+            this.lblSegundoOperando.Text = "Segundo operador:";
             // 
-            // txtSegundoOperador
+            // txtSegundoOperando
             // 
-            this.txtSegundoOperador.Location = new System.Drawing.Point(458, 248);
-            this.txtSegundoOperador.Multiline = true;
-            this.txtSegundoOperador.Name = "txtSegundoOperador";
-            this.txtSegundoOperador.ShortcutsEnabled = false;
-            this.txtSegundoOperador.Size = new System.Drawing.Size(196, 43);
-            this.txtSegundoOperador.TabIndex = 2;
-            this.txtSegundoOperador.TextChanged += new System.EventHandler(this.txtSegundoOperador_TextChanged);
+            this.txtSegundoOperando.Location = new System.Drawing.Point(458, 248);
+            this.txtSegundoOperando.Multiline = true;
+            this.txtSegundoOperando.Name = "txtSegundoOperando";
+            this.txtSegundoOperando.ShortcutsEnabled = false;
+            this.txtSegundoOperando.Size = new System.Drawing.Size(196, 43);
+            this.txtSegundoOperando.TabIndex = 2;
+            this.txtSegundoOperando.TextChanged += new System.EventHandler(this.txtSegundoOperador_TextChanged);
             // 
-            // txtPrimerOperador
+            // txtPrimerOperando
             // 
-            this.txtPrimerOperador.Location = new System.Drawing.Point(20, 248);
-            this.txtPrimerOperador.Multiline = true;
-            this.txtPrimerOperador.Name = "txtPrimerOperador";
-            this.txtPrimerOperador.ShortcutsEnabled = false;
-            this.txtPrimerOperador.Size = new System.Drawing.Size(196, 43);
-            this.txtPrimerOperador.TabIndex = 0;
-            this.txtPrimerOperador.TextChanged += new System.EventHandler(this.txtPrimerOperador_TextChanged);
+            this.txtPrimerOperando.Location = new System.Drawing.Point(20, 248);
+            this.txtPrimerOperando.Multiline = true;
+            this.txtPrimerOperando.Name = "txtPrimerOperando";
+            this.txtPrimerOperando.ShortcutsEnabled = false;
+            this.txtPrimerOperando.Size = new System.Drawing.Size(196, 43);
+            this.txtPrimerOperando.TabIndex = 0;
+            this.txtPrimerOperando.TextChanged += new System.EventHandler(this.txtPrimerOperador_TextChanged);
             // 
             // cmbOperacion
             // 
@@ -187,14 +187,14 @@
             this.rdbDecimal.UseVisualStyleBackColor = true;
             this.rdbDecimal.CheckedChanged += new System.EventHandler(this.rdbDecimal_CheckedChanged);
             // 
-            // lstbHistorial
+            // lstHistorial
             // 
-            this.lstbHistorial.FormattingEnabled = true;
-            this.lstbHistorial.ItemHeight = 15;
-            this.lstbHistorial.Location = new System.Drawing.Point(712, 110);
-            this.lstbHistorial.Name = "lstbHistorial";
-            this.lstbHistorial.Size = new System.Drawing.Size(253, 259);
-            this.lstbHistorial.TabIndex = 9;
+            this.lstHistorial.FormattingEnabled = true;
+            this.lstHistorial.ItemHeight = 15;
+            this.lstHistorial.Location = new System.Drawing.Point(712, 110);
+            this.lstHistorial.Name = "lstHistorial";
+            this.lstHistorial.Size = new System.Drawing.Size(253, 259);
+            this.lstHistorial.TabIndex = 9;
             // 
             // lblHistorial
             // 
@@ -213,12 +213,12 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(988, 386);
             this.Controls.Add(this.lblHistorial);
-            this.Controls.Add(this.lstbHistorial);
+            this.Controls.Add(this.lstHistorial);
             this.Controls.Add(this.grpSistema);
             this.Controls.Add(this.cmbOperacion);
-            this.Controls.Add(this.txtPrimerOperador);
-            this.Controls.Add(this.txtSegundoOperador);
-            this.Controls.Add(this.lblSegundoOperador);
+            this.Controls.Add(this.txtPrimerOperando);
+            this.Controls.Add(this.txtSegundoOperando);
+            this.Controls.Add(this.lblSegundoOperando);
             this.Controls.Add(this.lblOperacion);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.lblPrimerOperando);
@@ -248,14 +248,14 @@
         private Label lblPrimerOperando;
         private Label lblResultado;
         private Label lblOperacion;
-        private Label lblSegundoOperador;
-        private TextBox txtSegundoOperador;
-        private TextBox txtPrimerOperador;
+        private Label lblSegundoOperando;
+        private TextBox txtSegundoOperando;
+        private TextBox txtPrimerOperando;
         private ComboBox cmbOperacion;
         private GroupBox grpSistema;
         private RadioButton rdbDecimal;
         private RadioButton rdbBinario;
-        private ListBox lstbHistorial;
+        private ListBox lstHistorial;
         private Label lblHistorial;
     }
 }
