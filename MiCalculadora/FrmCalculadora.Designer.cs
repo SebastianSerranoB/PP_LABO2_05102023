@@ -124,7 +124,7 @@
             this.txtSegundoOperando.ShortcutsEnabled = false;
             this.txtSegundoOperando.Size = new System.Drawing.Size(196, 43);
             this.txtSegundoOperando.TabIndex = 2;
-            this.txtSegundoOperando.TextChanged += new System.EventHandler(this.txtSegundoOperador_TextChanged);
+            //this.txtSegundoOperando.TextChanged += new System.EventHandler(this.txtSegundoOperador_TextChanged);
             // 
             // txtPrimerOperando
             // 
@@ -134,7 +134,7 @@
             this.txtPrimerOperando.ShortcutsEnabled = false;
             this.txtPrimerOperando.Size = new System.Drawing.Size(196, 43);
             this.txtPrimerOperando.TabIndex = 0;
-            this.txtPrimerOperando.TextChanged += new System.EventHandler(this.txtPrimerOperador_TextChanged);
+            //this.txtPrimerOperando.TextChanged += new System.EventHandler(this.txtPrimerOperador_TextChanged);
             // 
             // cmbOperacion
             // 

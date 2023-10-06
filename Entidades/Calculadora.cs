@@ -165,7 +165,7 @@ namespace Entidades
             sB.AppendLine($"Sistema: {Calculadora.Sistema}");
             sB.AppendLine($"Primer operando: {PrimerOperando.Valor}");
             sB.AppendLine($"Segundo operando: {segundoOperando.Valor}");
-            sB.AppendLine($"Operador: {operador}");
+            sB.AppendLine($"Operador: {operador.ToString()}");
 
             return sB.ToString();
         }

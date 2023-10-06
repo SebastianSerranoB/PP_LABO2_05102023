@@ -49,12 +49,7 @@ namespace MiCalculadora
 
         private void FrmCalculadora_Load(object sender, EventArgs e)
         {
-            this.cmbOperacion.DataSource = new char[] { '+', '-', '*',
-                                                                    '/' };
-
-
-           // this.rdbDecimal.Checked = true;
-           // this.cmbOperacion.SelectedItem = "";
+            this.cmbOperacion.DataSource = new char[] { '+', '-', '*', '/' };
         }
 
         private Numeracion GetOperando(string value)
@@ -86,15 +81,7 @@ namespace MiCalculadora
             Calculadora.Sistema = ESistema.Binario;
         }
 
-        private void txtPrimerOperador_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void txtSegundoOperador_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
+       
 
        
         private void btnOperar_Click(object sender, EventArgs e)
@@ -106,12 +93,9 @@ namespace MiCalculadora
             this.calculadora.Calcular(operador);
             this.calculadora.ActualizaHistorialDeOperaciones(operador);
             this.lblResultado.Text = $"Resultado: { calculadora.Resultado.Valor}";
-                                this.MostrarHistorial();
+            this.MostrarHistorial();
 
         }
-        //el listbox es una coleccion, nos va a psar el codigo, peor hay distintos elementos,
-        //la parte del formulario hay que casi despreocuparse porque el codigo lo pasa el profe
-
-        //private void SetResultado() { }
+        
     }
 }
